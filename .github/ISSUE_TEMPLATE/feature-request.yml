@@ -1,0 +1,51 @@
+name: ✨ Feature request
+description: A new feature or change to the project
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Sweet! Let's hear about the feature! :heart_eyes:
+  - type: textarea
+    id: main-driver
+    attributes:
+      label: '🎯 Driver'
+      description: What is the main driver for the change?
+    validations:
+      required: true
+  - type: textarea
+    id: why-important
+    attributes:
+      label: '💡 Why is this important now'
+      description: Describe why this is a priority
+    validations:
+      required: true
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: '👪 Stakeholders'
+      description: Who is affected and involved?
+    validations:
+      required: true
+  - type: textarea
+    id: accept-criteria
+    attributes:
+      label: '📄 Acceptance criteria'
+      description: What does it take to complete the feature or change?
+    validations:
+      required: true
+  - type: textarea
+    id: impact-or-deps
+    attributes:
+      label: '🕸️ Impact/dependencies (optional)'
+      description: Any other impact or dependencies of significance worth mentioning?
+    validations:
+      required: false
+  - type: textarea
+    id: pitfalls
+    attributes:
+      label: '🚨 Potential pitfalls (optional)'
+      description: Could this have any negative consequences or backfire?
+    validations:
+      required: false
